@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+}
+header {
+    padding: 20px;
+}
+.row-content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-txt h1 {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+}
+.hero-txt h1 span {
+    color: hsl(0, 36%, 70%);
+}
+.small-txt  {
+     margin-top: 20px;
+     width: 300px;
+     text-align: center;
+}
+.small-txt p {
+    font-size: 15px;
+    line-height: 30px;
+    color: hsl(0, 36%, 70%);
+}
+.form-div {
+    margin-top: 20px;
+}
+form input {
+    padding: 12px;
+    width: 250px;
+    outline: none;
+    border-radius: 25px;
+    border: 0.5px solid hsl(0, 36%, 70%);
+}
+form button {
+    padding: 10px 14px;
+    width: 80px;
+    border-radius: 35px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    align-items: center;
+   background-image: linear-gradient( 135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    outline: none;
+    margin-left: -70px;
+}
+.row-2 {
+    padding: 0;
+    width: 100dvw;
+}
+.row-2 img {
+    object-fit: cover;
+    width: 100%;
+}
+#error-txt {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: hsl(0, 93%, 68%);
+}
+.img-div {
+    display: none;
+}
+@media only screen and(min-width: 1024px){
+    .row-1{
+        flex-basis: 70%;
+    }
+    .row-2 {
+        flex-basis: 30%;
+    }
+}
+
+@media only screen and (min-width: 991px){
+    body {
+        max-height: 100dvh;
+    }
+    .hero {
+        max-width: 100dvh;
+    }
+   .row {
+    flex-direction: row;
+   }
+   .img-div {
+    display: initial;
+   }
+   header{
+    display: none;
+   }
+   .row-content {
+    display: block;
+    margin-left: 100px;
+   }
+   #mobile{
+    display: none;
+   }
+   .hero-txt {
+    margin-top: 100px;
+   }
+   .hero-txt h1 {
+    font-size: 80px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: left;
+    width: 500px;
+}
+.hero-txt h1 span {
+    color: hsl(0, 36%, 70%);
+}
+.small-txt  {
+     margin-top: 20px;
+     text-align: left;
+}
+.small-txt p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 400px;
+    color: hsl(0, 36%, 70%);
+}
+.hero {
+    justify-content: space-between;
+    align-items: left;
+}
+.row-1 {
+    flex-basis: 70%;
+    background: url(../images/bg-pattern-desktop.svg) no-repeat;
+    background-size: cover;
+}
+.row-2 {
+    flex-basis: 30%;
+    max-width: 100%;
+    background: url(../images/hero-desktop.jpg) no-repeat;
+    background-size: cover;
+    width: 100dvw;
+    margin-left: auto;
+    height: 100dvh;
+}
+form input {
+    width: 350px;
+}
+}
